@@ -8,18 +8,19 @@ namespace TimAngle
 {
    public class TimeAngle
     {
-        public static int ClockAngle(int hour, int min)
-        {        
-            int newMin = min * 6;
-            int newHour = hour * 30;
-            int Angle = (newHour > newMin) ?
-            newHour - newMin : newMin - newHour;           
-            return Angle;
+        public static double ClockAngle(int hour, int min)
+        {
+            double newHour = hour;
+            double newMin = min;
+            newHour *=  30;
+            newHour += (newMin / 2);
+            newMin *= 6;
+            return Math.Abs(newMin - newHour);
         }
          
         static void Main(string[] args)
         {
-            Console.WriteLine(ClockAngle(9, 1));
+            Console.WriteLine(ClockAngle(3, 45));
             Console.ReadLine();
         }
     }

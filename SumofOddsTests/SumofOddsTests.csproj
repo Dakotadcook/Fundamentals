@@ -62,12 +62,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SumofOdds\SumofOdds.csproj">
-      <Project>{0B28541A-AAD8-4423-B0F6-888C8F63AF99}</Project>
-      <Name>SumofOdds</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

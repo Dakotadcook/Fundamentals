@@ -4,25 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SumOfOdd
+namespace IsPrime
 {
-    public class SumOdd
+    class IsPrime
     {
-        public static int SumOfOdd(int input)
+        public static bool IsPrimes(int num)
         {
-            int answer = 0;
-            for (int i = 0; i <= input; i++)
+            for (int i = 2; i < num; i++)
             {
-                if (i % 2 == 1)
+                if (num % i == 0)
                 {
-                    answer += i;
+                    return true;
                 }
             }
-            return answer;
+            return false;
         }
         static void Main(string[] args)
         {
-            Console.WriteLine(SumOfOdd(50));
+            Console.WriteLine(IsPrimes(11));
             Console.ReadLine();
         }
     }

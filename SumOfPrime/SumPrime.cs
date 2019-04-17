@@ -23,7 +23,7 @@ namespace SumOfPrime
         {
             int answer = 0;
             for (int i = 2; i <= input; i++)
-            {    //TODO
+            {    
                 if (IsPrime(i))
                 {
                     answer += i;
@@ -34,7 +34,7 @@ namespace SumOfPrime
         }
         static void Main(string[] args)
         {
-            Console.WriteLine(SumOfPrime(5));
+            Console.WriteLine(SumOfPrime(10));
             Console.ReadLine();
         }
     }

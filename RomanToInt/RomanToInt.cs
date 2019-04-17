@@ -51,8 +51,8 @@ namespace RomanToInt
         }
         static void Main(string[] args)
         {
-            Console.WriteLine(RomanInt("MCMXCIV"));
-            //Console.WriteLine(RomanInt("XIV"));
+            Console.WriteLine(RomanInt("MCMXCVI"));
+            Console.WriteLine(RomanInt("XXII"));
             Console.ReadLine();
         }
     }

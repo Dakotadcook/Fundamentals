@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Palindrome
 {
@@ -17,13 +13,8 @@ namespace Palindrome
                 revInput += input[i];
             }
             if (input == revInput)
-            {
                 return true;
-            }
-            else
-            {
-                return false;
-            }
+            return false;
         }
         static bool PalinDrome(string input)
         {
@@ -39,7 +30,7 @@ namespace Palindrome
         }
         static void Main(string[] args)
         {
-            Console.WriteLine(PalinDrome("abba"));
+            Console.WriteLine(Palindrome("woow"));
             Console.ReadLine();
         }
     }
